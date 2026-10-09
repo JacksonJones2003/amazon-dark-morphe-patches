@@ -1,16 +1,26 @@
-# 👋🧩 Morphe Patches template
+# 🌙 Amazon dark mode patches
 
-Template repository for Morphe Patches.
+Patches for use with [Morphe](https://morphe.software) that add a dark mode to the
+Amazon Shopping Android app (`com.amazon.mShop.android.shopping`).
 
 ## ❓ About
 
-Patches for apps I like.
+The Amazon Shopping app has no dark mode. The **Dark mode** patch adds one that follows
+the system dark theme:
 
-<!-- TODO: Update this about section with a brief introduction/summary about this repo and what it offers. -->
+- Web pages shown in the app (nearly all of the app content) are darkened by Android WebView.
+- Optionally (on by default), the native parts of the app such as the search bar and the bottom
+  navigation bar are darkened by the Android "force dark" feature.
+
+Requires Android 13 or newer for the web pages to be darkened.
+
+These patches are not affiliated with Amazon or with the Morphe project.
 
 ### How to use these patches
 
 Click here to add these patches to Morphe: https://morphe.software/add-source?github=xyz-user/xyz-patches
+
+Releases from the `dev` branch are pre-releases. Enable pre-releases for this patch source in Morphe Manager to use them.
 
 ## 🩹 Patches list
 
@@ -88,4 +98,4 @@ See the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation
 
 ## 📜 License
 
-UserXYZ Patches are licensed under the [GNU General Public License v3.0](LICENSE)
+These patches are licensed under the [GNU General Public License v3.0](LICENSE)

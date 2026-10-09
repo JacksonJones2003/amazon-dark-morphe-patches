@@ -1,18 +1,16 @@
-group = "app.template"
+group = "app.jacksonjones"
 
 patches {
-    // TODO: Update this section with your project details.
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
-        contact = "na"
-        website = "na"
+        name = "JacksonJones2003 Patches"
+        description = "Dark mode for the Amazon Shopping app"
+        source = "git@github.com:JacksonJones2003/amazon-dark-morphe-patches.git"
+        author = "JacksonJones2003"
+        contact = "https://github.com/JacksonJones2003/amazon-dark-morphe-patches/issues"
+        website = "https://github.com/JacksonJones2003/amazon-dark-morphe-patches"
         license = "GPLv3"
     }
 }
-
 // Separate configuration so gson is available at runtime for the
 // generatePatchesList task but never bundled into the APK.
 val patchListGeneratorClasspath = configurations.create("patchListGeneratorClasspath")
