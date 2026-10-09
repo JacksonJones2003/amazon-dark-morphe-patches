@@ -1,5 +1,45 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "0.0.0",
-  "patches": []
+  "version": "1.0.0-dev.1",
+  "patches": [
+    {
+      "name": "Dark mode",
+      "description": "Adds a dark mode that follows the system dark theme. Web pages shown in the app are darkened, and optionally the native parts of the app.",
+      "default": true,
+      "category": null,
+      "dependencies": [
+        "ResourcePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.amazon.mShop.android.shopping",
+          "name": "Amazon Shopping",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FF9900",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": true,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "darkenNativeUi",
+          "title": "Darken native UI",
+          "description": "Let Android automatically darken the parts of the app that are not web pages, such as the search bar and the bottom navigation bar. Turn this off if these parts of the app look wrong.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        }
+      ]
+    }
+  ]
 }
